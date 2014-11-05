@@ -1,0 +1,105 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: Helvetica, Arial, sans-serif;
+  max-width: 90%;
+  margin: 0 auto;
+  font-family: 'Quicksand', 'sans-serif';
+}
+
+hr {
+  width: 50%;
+  margin-left: 0;
+}
+
+h1 {
+  font-family: 'Josefin Sans', 'sans-serif';
+}
+
+input, option{
+  font-family: monospace;
+}
+
+.highlight {
+  background-color: #ccc;
+  border: 1px solid #888;
+  font-style: italic;
+  margin: 0.5em 0;
+  padding: 0.5em;
+}
+
+.in-field {
+  display: inline-block;
+  position: relative;
+  left: 8em;
+  top:.05em;
+  color:#777;
+  font-size: .85em;
+}
+
+#deficit {
+  width: 50%;
+  margin: 0 auto;
+  padding: auto 0;
+}
+
+#deficit {
+  margin-left: 0;
+  margin-bottom: .5em;
+}
+
+#deficit div {
+
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  padding: 1% 2%;
+  border: 1px solid black;
+  border-radius: 1em;
+  width: 8em;
+  height: 5em;
+}
+
+.deficit-custom {
+  clear: both;
+}
+
+#calc-help {
+  max-width: 100%
+}
+
+#calc-help img {
+  max-width: 45%
+}
+
+#body-fat-images img {
+  max-height: 25%;
+}
+
+img.highlighted {
+    border: 1px solid blue;
+}
+
+#result div{
+  float: left;
+  margin: 0 1em;
+}
+
+.box-highlighted {
+  background-color: lightblue;
+}
+
+#body-fat-input {
+  width: 40%;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}

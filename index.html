@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8">
+    <title>Fat Amortization</title>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <script src="js/moment.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/fatcalc.js"></script>
+  </head>
+
+  <body>
+      <h1>Body Fat Progress Calculator</h1>
+
+      <form action>
+
+        <div id="weight-input">
+          <label for="weight">Weight in lbs</label>
+          <input type="text" name="weight" placeholder="150" value="170"/>
+        </div>
+
+        <hr>
+
+        <div id="sex-input">
+          <label for="sex">Sex</label>
+          <input type="radio" name="sex" value="male">Male</input>
+          <input type="radio" name="sex" value="female"/>Female</input>
+        </div>
+
+        <div id="body-fat-input">
+          <label for="body-fat">Body Fat % (Enter a number or choose an image that best represents your current body fat)</label>
+            <input type="text" name="body-fat" placeholder="20" value="15"/>
+          <div id="body-fat-images">
+            <div id="male-images">
+              <img src="images/men/1.png" data-value="4">
+              <img src="images/men/2.png" data-value="7">
+              <img src="images/men/3.png" data-value="10">
+              <img src="images/men/4.png" data-value="15">
+              <img src="images/men/5.png" data-value="22">
+              <img src="images/men/6.png" data-value="32">
+            </div>
+            <div id="female-images">
+              <img src="images/women/1.png" data-value="12">
+              <img src="images/women/2.png" data-value="15">
+              <img src="images/women/3.png" data-value="18">
+              <img src="images/women/4.png" data-value="21">
+              <img src="images/women/5.png" data-value="26">
+              <img src="images/women/6.png" data-value="35">
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="deficit-input">
+          <label for="deficit">Daily Caloric Deficit</label>
+          <hr>
+          <div id="deficit" class="group">
+            <div data-value="250">Easy <br>(250 Calories)</div>
+            <div data-value="500">Medium <br>(500 Calories)</div>
+            <div data-value="750">Intense <br>(750 Calories)</div>
+            <div data-value="custom">Custom</div>
+          </div>
+          <input type="text" class="deficit-custom" name="deficit" value ="500"/>
+        </div>
+
+        <hr>
+
+        <input type="button" id="calculate" value="calculate">
+
+      </form>
+
+      <div id="result"></div>
+      
+  </body>
+
+</html>
